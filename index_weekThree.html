@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐈‍⬛ Week Three by Nancy Melchert</title>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        border-radius: 25px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          225deg,
+          rgba(192, 193, 195, 0.7) 0%,
+          rgba(200, 239, 248, 0.8) 80%,
+          rgba(255, 193, 131, 0.8) 100%
+        );
+      }
+
+      h1 {
+        text-shadow: 0.5px 2px #c0c1c3;
+        text-align: center;
+        color: #fcb045;
+        font-size: 30px;
+      }
+
+      h2,
+      h3 {
+        background: #eec996;
+        text-align: center;
+        max-width: 50%;
+        margin: 0 auto;
+        border: 5px solid #c0c1c3;
+        border-radius: 25px;
+        padding: 15px;
+        font-size: 20px;
+      }
+
+      img {
+        display: block;
+        margin: 15px auto;
+        padding: 1px;
+        max-width: 80%;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        border: 5px solid #c8eff8;
+      }
+
+      img:hover {
+        max-width: 100%;
+        border-radius: 25px;
+        border: 7px solid #fcb045;
+        filter: sepia(0.8);
+      }
+
+      .catPic {
+        display: block;
+        margin: 15px auto;
+        padding: 0px;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        border: 5px solid #c8eff8;
+        width: 403px;
+        height: 227px;
+        background: url("../03_WeekThree/photos/MoonFierceOG_Tiny.png")
+          no-repeat;
+        size-adjust: 80%;
+      }
+
+      .catPic:hover {
+        margin: 35px auto;
+        transform: scale(1.2);
+        background: url("../03_WeekThree/photos/FierceMoon_V2_PopOut_Tiny.png")
+          no-repeat;
+        border: 5px solid #fcb045;
+      }
+
+      p {
+        line-height: 1.5;
+        padding: 15px;
+        font-size: 18px;
+        margin: 10px 10px 10px;
+        border-radius: 25px;
+        transition: all 150ms ease-in-out;
+      }
+
+      p:hover {
+        font-weight: bold;
+        font-size: 24px;
+        background: linear-gradient(
+          225deg,
+          rgba(255, 193, 131, 1) 0%,
+          rgba(200, 239, 248, 1) 80%,
+          rgba(192, 193, 195, 1) 100%
+        );
+      }
+
+      .toys:hover {
+        color: #fcb045;
+        font-weight: 900;
+        font-size: 24px;
+        margin: 0 auto;
+      }
+
+      span {
+        display: block;
+        line-height: 1.5;
+        font-size: 18px;
+        margin: 20px 0 10px;
+      }
+
+      hr {
+        margin-top: 20px;
+        border-style: double;
+      }
+
+      ul {
+        font-weight: 600;
+        padding: 20px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        list-style-type: square;
+        padding: 0px;
+        list-style-type: none;
+      }
+
+      li {
+        display: list-item;
+        border: 20px;
+        border-radius: 10px;
+        padding: 2px 0px;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #c8eff8;
+        color: #c0c1c3;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: 1px solid #c0c1c3;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: #fcb045;
+        color: #c8eff8;
+        font-size: 24px;
+        padding: 10px 20px;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .acc {
+        display: inline;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+
+      .acc:hover {
+        text-decoration: underline;
+      }
+
+      .GoFundMe {
+        display: block;
+        margin: 25px auto;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 15px;
+        margin: 10px;
+      }
+
+      .GoFundMe:hover {
+        color: #fcb045;
+        text-decoration: underline;
+        line-height: 15px;
+        font-size: 20px;
+      }
+
+      .fave {
+        font-style: normal;
+      }
+
+      .fave:hover {
+        font-weight: bolder;
+        font-style: italic;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 13px;
+      }
+
+      .nancy {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love my cat!</h1>
+      <h2>His name is Moon.</h2>
+
+      <div class="catPic"></div>
+
+      <hr />
+
+      <p>
+        Moon is a black cat, possibly a Bombay. I adopted him from
+        <a href="https://www.nycacc.org/" target="_blank" class="acc">ACC</a> in
+        March. He came home with a few illnesses and I thought our maladies
+        would line up well. He had a polyp in his ear and
+        <strong>esophageal-nasal stenosis</strong>. He underwent some surgeries
+        and came out a stronger, happier kitty.
+      </p>
+
+      <p>
+        He likes playing with <em>all of his toys</em>, especially those lattice
+        balls with little bells in them. He chases those around the apartment
+        endlessly!
+      </p>
+      <p>His <em class="fave">favorite</em> toys are:</p>
+      <ul class="toys">
+        <li>Lattice Balls</li>
+        <li>Mr. Bird Wand Toy</li>
+        <li>Springys</li>
+        <li>Senses Ball Track</li>
+      </ul>
+      <p>
+        We have a catio set up outside so he can get a 3D view of birds, but the
+        birds remain safe from his deadly grasp.
+      </p>
+      <p>
+        Moon has taken well to clicker training, and now wakes me up with a
+        gentle tap on the shoulder. He just celebrated his 1st birthday on
+        October 21st! We celebrated with new toys and a long nap.
+      </p>
+      <hr />
+      <p>
+        For more pictures and to donate to Moon's recovery fund, check out the
+        GoFundMe.
+      </p>
+
+      <a href="https://gofund.me/834fa050" target="_blank" class="GoFundMe"
+        >GoFundMe | Help Moon Recover from Surgery
+      </a>
+
+      <button class="meow-button">🐈‍⬛ Send Meows to Moon 🐈‍⬛</button>
+      <br />
+      <h3>🐈‍⬛</h3>
+      <span class="footer">
+        This page was built by
+        <a href="https://www.nancymelchert.com" target="_blank" class="nancy"
+          >Nancy Melchert</a
+        >
+      </span>
+    </div>
+    <script>
+      function updateMeows(newMeows) {
+        let returnMeows = document.querySelector("h3");
+        returnMeows.innerHTML = newMeows;
+      }
+      function sayMeow() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let numMeows = prompt("How many meows would you like to send?");
+
+        let totalMeows = "Meow ".repeat(numMeows);
+
+        if (name.length === 0 && numMeows.length === 0) {
+          alert(`That's ok, Moon says "Meow" anyway 🐈‍⬛`);
+        } else {
+          alert(
+            `Thank You, ${name}!\n\nWe'll be in touch by email. Meanwhile, look at cats!`
+          );
+          updateMeows(`Moon says "${totalMeows.trim()}," ${name}!`);
+        }
+      }
+      let meowButton = document.querySelector(".meow-button");
+      meowButton.addEventListener("click", sayMeow);
+    </script>
+  </body>
+</html>
